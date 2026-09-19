@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>signal System</title>
+</head>
+<body>
+
+<script>let command = "deposit";
+let balance = 25000;
+
+let depositAmount = 5000;
+let withdrawAmount = 3000;
+let transferAmount = 7000;
+
+switch (command.toLowerCase()) {
+
+    case "balance":
+        console.log("Current Balance: ₹" + balance);
+        break;
+
+    case "deposit":
+        balance += depositAmount;
+        console.log("Transaction: Deposit");
+        console.log("Deposited: ₹" + depositAmount);
+        console.log("Updated Balance: ₹" + balance);
+        break;
+
+    case "withdraw":
+        if (withdrawAmount <= balance) {
+            balance -= withdrawAmount;
+            console.log("Transaction: Withdrawal");
+            console.log("Withdrawn: ₹" + withdrawAmount);
+            console.log("Updated Balance: ₹" + balance);
+        } else {
+            console.log("Withdrawal rejected: Insufficient balance.");
+        }
+        break;
+
+    case "transfer":
+        if (transferAmount <= balance) {
+            balance -= transferAmount;
+            console.log("Transaction: Transfer");
+            console.log("Transferred: ₹" + transferAmount);
+            console.log("Updated Balance: ₹" + balance);
+        } else {
+            console.log("Transfer rejected: Insufficient balance.");
+        }
+        break;
+    }
+    </script>
+    </body>
+    </html>

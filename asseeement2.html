@@ -119,3 +119,51 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS learning</title>
+    </head>
+    <body>
+        <h1> Arithmetic operators</h1>
+        <div id="output"></div>
+        <script>
+            let a=10;
+            let b=4;
+            let result="OPERATORS<br>";
+            result+="ADDITION:"+ (a+b)+"<br>";
+            result+="SUBSTRACTION:"+ (a-b)+"<br>";
+            result+="MULTIPLICATION:"+(a*b)+"<br>";
+            result+="DIVISION:"+(a/b)+"<br>";
+            result+="REAMAINDER:"+(a%b)+"<br>";
+        
+            let age=25
+            console.log(age>18);
+            console.log(age>=18);
+            console.log(age==18);
+            console.log(age<=18);
+            console.log(age<18);
+            <!--logical operators-->
+            let age2=25;
+            let hasLicense=true;
+            console.log(age>=18 && hasLicense);
+            console.log(age<=18 && hasLicense);
+            let hasEmail=false;
+            let hasPhone=true;
+            console.log( hasEmail || hasPhone);
+            console.log(!hasEmail);
+
+            document.getElementById("output").innerHTML=result;
+        </script>
+        </body>
+        </html>
+        <h1> Arithmetic operators</h1>
+        <div id="output"></div>
+        <script>
+            let price=500;
+            let quan=14.5;
+            let total=price*quan;
+            console.log("Total:",total);
+            console.log("Is total greater than 1000:",total>1000);
+            console.log("Is total equal to 1500?",total===1500);
+        

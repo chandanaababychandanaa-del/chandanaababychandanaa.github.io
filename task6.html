@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>signal System</title>
+</head>
+<body>
+
+<script>
+    let plan = "premium";
+
+switch (plan.toLowerCase()) {
+    case "basic":
+        console.log("Plan: Basic");
+        console.log("Price: ₹199");
+        console.log("Data: 1.5 GB/day");
+        console.log("Validity: 28 days");
+        break;
+
+    case "standard":
+        console.log("Plan: Standard");
+        console.log("Price: ₹299");
+        console.log("Data: 2 GB/day");
+        console.log("Validity: 28 days");
+        break;
+
+    case "premium":
+        console.log("Plan: Premium");
+        console.log("Price: ₹499");
+        console.log("Data: 3 GB/day");
+        console.log("Validity: 56 days");
+        break;
+
+    case "unlimited":
+        console.log("Plan: Unlimited");
+        console.log("Price: ₹699");
+        console.log("Data: 5 GB/day");
+        console.log("Validity: 84 days");
+        break;
+
+    default:
+        console.log("Invalid plan. Please choose Basic, Standard, Premium, or Unlimited.");
+}
+</script>
+</body>
+</html>

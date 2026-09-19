@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>signal System</title>
+</head>
+<body>
+
+<script>
+    let option = 3;
+let balance = 10000;
+
+switch (option) {
+    case 1:
+        console.log("Current Balance: ₹" + balance);
+        break;
+
+    case 2:
+        let depositAmount = 2000;
+
+        if (depositAmount > 0) {
+            balance = balance + depositAmount;
+            console.log("Deposit Successful");
+            console.log("Balance: ₹" + balance);
+        } else {
+            console.log("Invalid deposit amount");
+        }
+        break;
+
+    case 3:
+        let withdrawAmount = 3000;
+
+        if (withdrawAmount > 0 && withdrawAmount <= balance) {
+            balance = balance - withdrawAmount;
+            console.log("Withdrawal Successful");
+            console.log("Balance: ₹" + balance);
+        } else {
+            console.log("Invalid withdrawal amount");
+        }
+        break;
+
+    case 4:
+        console.log("Thank you for using our service");
+        break;
+
+    default:
+        console.log("Invalid option");
+}
+</script>
+</body>
+</html>

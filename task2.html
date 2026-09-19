@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Ordering System</title>
+</head>
+<body>
+
+<script>
+    let choice = 3;
+    let quantity = 2;
+
+    switch (choice) {
+        case 1:
+            let pizzaPrice = 250;
+            console.log("Pizza - ₹250");
+            console.log("Quantity: " + quantity);
+            console.log("Total Bill: ₹" + (pizzaPrice * quantity));
+            break;
+
+        case 2:
+            let burgerPrice = 150;
+            console.log("Burger - ₹150");
+            console.log("Quantity: " + quantity);
+            console.log("Total Bill: ₹" + (burgerPrice * quantity));
+            break;
+
+        case 3:
+            let pastaPrice = 200;
+            console.log("Pasta - ₹200");
+            console.log("Quantity: " + quantity);
+            console.log("Total Bill: ₹" + (pastaPrice * quantity));
+            break;
+
+        case 4:
+            let sandwichPrice = 120;
+            console.log("Sandwich - ₹120");
+            console.log("Quantity: " + quantity);
+            console.log("Total Bill: ₹" + (sandwichPrice * quantity));
+            break;
+
+        case 5:
+            console.log("Thank you for visiting");
+            break;
+
+        default:
+            console.log("Invalid menu option");
+    }
+</script>
+
+</body>
+</html>
